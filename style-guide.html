@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide e Design System | Sem Limites</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-guide.css">
+</head>
+
+<body>
+
+    <section class="abertura">
+        <div class="container">
+            <p class="tag">Documentação</p>
+            <h1>Style Guide &amp; <em>Design System</em></h1>
+            <p>Esta página reúne as decisões visuais do projeto <strong>Sem Limites</strong>. O <em>Style Guide</em> (cores, tipografia, espaçamento) define a aparência; o <em>Design System</em> define os componentes reutilizáveis construídos com essas regras. As cores, as fontes e os pesos estão em variáveis CSS no <code>:root</code> do arquivo <code>css/estilo.css</code>, então mudar um valor ali muda o site inteiro de uma vez.</p>
+        </div>
+    </section>
+
+    <section class="sec" id="cores">
+        <div class="container">
+            <h2>1. Cores</h2>
+            <p class="intro">Paleta neutra de base, para que as fotos sejam o ponto de cor da página. O terracota aparece só em detalhes: links, ícones e estados de <em>hover</em>.</p>
+
+            <div class="cores">
+                <div class="cor">
+                    <div class="fundo"></div>
+                    <strong>Fundo principal</strong>
+                    <p>--fundo</p>
+                    <p>#FFFFFF</p>
+                </div>
+                <div class="cor">
+                    <div class="areia"></div>
+                    <strong>Fundo alternativo</strong>
+                    <p>--areia</p>
+                    <p>#F3F1EC</p>
+                </div>
+                <div class="cor">
+                    <div class="texto"></div>
+                    <strong>Texto principal</strong>
+                    <p>--texto</p>
+                    <p>#15161A</p>
+                </div>
+                <div class="cor">
+                    <div class="cinza"></div>
+                    <strong>Texto suave</strong>
+                    <p>--cinza</p>
+                    <p>#70727A</p>
+                </div>
+                <div class="cor">
+                    <div class="escuro"></div>
+                    <strong>Escura (blocos)</strong>
+                    <p>--escuro</p>
+                    <p>#11161F</p>
+                </div>
+                <div class="cor">
+                    <div class="laranja"></div>
+                    <strong>Destaque</strong>
+                    <p>--laranja</p>
+                    <p>#B4552F</p>
+                </div>
+                <div class="cor">
+                    <div class="linha"></div>
+                    <strong>Borda</strong>
+                    <p>--linha</p>
+                    <p>#E4E1DA</p>
+                </div>
+            </div>
+
+            <div class="aviso">
+                <i class="fa-solid fa-circle-info"></i>
+                <p>Regra de uso: fundo claro com texto escuro, ou fundo escuro com texto branco. O terracota nunca é usado como fundo de bloco grande. Aparece só em textos curtos, ícones e botões em <em>hover</em>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec cinza" id="tipografia">
+        <div class="container">
+            <h2>2. Tipografia</h2>
+            <p class="intro">Duas fontes do Google Fonts. <strong>Playfair Display</strong> (serifada) nos títulos, sempre com uma palavra em itálico para dar ritmo. <strong>Inter</strong> (sem serifa) em todo o resto, porque é mais legível em texto corrido e em telas pequenas.</p>
+
+            <div class="tipos">
+                <div class="tipo">
+                    <div class="ex h1">Paixões <em>Sem Limites</em></div>
+                    <div class="info">
+                        <strong>Título do banner (h1)</strong>
+                        <p>Playfair Display · 58px · peso 500</p>
+                    </div>
+                </div>
+                <div class="tipo">
+                    <div class="ex h2">Título de seção</div>
+                    <div class="info">
+                        <strong>Título de seção (h2)</strong>
+                        <p>Playfair Display · 54px · peso 500</p>
+                    </div>
+                </div>
+                <div class="tipo">
+                    <div class="ex h3">Nome do mundo</div>
+                    <div class="info">
+                        <strong>Título de cartão (h3)</strong>
+                        <p>Playfair Display · 24px · peso 500</p>
+                    </div>
+                </div>
+                <div class="tipo">
+                    <div class="ex corpo">Texto corrido do site, usado em parágrafos e descrições.</div>
+                    <div class="info">
+                        <strong>Corpo</strong>
+                        <p>Inter · 16px · peso 400 · entrelinha 1.6</p>
+                    </div>
+                </div>
+                <div class="tipo">
+                    <div class="ex apoio">Descrição curta dentro dos cartões e legendas.</div>
+                    <div class="info">
+                        <strong>Texto de apoio</strong>
+                        <p>Inter · 14px · cor suave</p>
+                    </div>
+                </div>
+                <div class="tipo">
+                    <div class="ex"><p class="tag">Etiqueta</p></div>
+                    <div class="info">
+                        <strong>Etiqueta / rótulo</strong>
+                        <p>Inter · 11px · maiúsculas · espaçamento 1.5px</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec" id="espacamento">
+        <div class="container">
+            <h2>3. Espaçamento, cantos e sombra</h2>
+            <p class="intro">Todos os espaços do site saem de uma escala fixa baseada em 8px. Isso evita valores aleatórios e mantém o ritmo vertical parecido em todas as seções.</p>
+
+            <div class="espacos">
+                <div class="espaco">
+                    <strong>8px</strong>
+                    <div class="barra e1"></div>
+                </div>
+                <div class="espaco">
+                    <strong>16px</strong>
+                    <div class="barra e2"></div>
+                </div>
+                <div class="espaco">
+                    <strong>24px</strong>
+                    <div class="barra e3"></div>
+                </div>
+                <div class="espaco">
+                    <strong>40px</strong>
+                    <div class="barra e4"></div>
+                </div>
+                <div class="espaco">
+                    <strong>64px</strong>
+                    <div class="barra e5"></div>
+                </div>
+                <div class="espaco">
+                    <strong>96px</strong>
+                    <div class="barra e6"></div>
+                </div>
+            </div>
+
+            <div class="cantos">
+                <div class="canto">
+                    <div class="caixa r1"></div>
+                    <strong>12px</strong>
+                    <p>blocos pequenos</p>
+                </div>
+                <div class="canto">
+                    <div class="caixa r2"></div>
+                    <strong>20px</strong>
+                    <p>fotos</p>
+                </div>
+                <div class="canto">
+                    <div class="caixa r3"></div>
+                    <strong>28px</strong>
+                    <p>cartões e banner</p>
+                </div>
+                <div class="canto">
+                    <div class="caixa pill"></div>
+                    <strong>999px</strong>
+                    <p>botões e etiquetas</p>
+                </div>
+                <div class="canto">
+                    <div class="caixa sombra"></div>
+                    <strong>Sombra</strong>
+                    <p>0 12px 30px rgba(17,22,31,.08)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec cinza" id="design-system">
+        <div class="container">
+            <h2>4. Design System: componentes</h2>
+            <p class="intro">Cada componente abaixo existe como classe no CSS e é reaproveitado em várias seções. É por isso que o site inteiro parece a mesma peça: nada foi estilizado na mão, tudo vem daqui.</p>
+
+            <div class="comp">
+                <h3>Botão</h3>
+                <p class="txt"><code>.btn</code>: pílula, 14px, peso 500, fundo branco. Aparece sobre a foto do banner, por isso a demonstração abaixo está sobre fundo escuro.</p>
+                <div class="demo escuro">
+                    <a href="#" class="btn">Explorar meus mundos</a>
+                </div>
+                <p class="uso">Uma variação só, sempre sobre imagem</p>
+            </div>
+
+            <div class="comp">
+                <h3>Etiquetas</h3>
+                <p class="txt">Rótulo curto em maiúsculas que nomeia a seção ou classifica o cartão. As duas dividem a mesma base de pílula e tipografia.</p>
+                <div class="demo">
+                    <p class="tag">A jornada</p>
+                    <p class="tag">O que me move</p>
+                    <p class="tag">Documentação</p>
+                </div>
+                <p class="uso"><code>.tag</code> no topo da seção · <code>.card-tag</code> sobre a foto, no canto superior direito</p>
+            </div>
+
+            <div class="comp">
+                <h3>Cartão de mundo</h3>
+                <p class="txt">Componente principal da seção Mundos: foto com título e etiqueta por cima, descrição embaixo. Sobe 6px no <em>hover</em>.</p>
+                <div class="demo">
+                    <div class="card">
+                        <div class="card-foto">
+                            <img src="imagens/xadrez.jpg" alt="Tabuleiro de xadrez">
+                            <p class="card-tag">Estratégia</p>
+                            <h3>64 Casas</h3>
+                        </div>
+                        <p>O jogo que ensina a pensar três lances à frente antes de mover um só.</p>
+                    </div>
+                </div>
+                <p class="uso"><code>.card</code> &gt; <code>.card-foto</code> + <code>p</code>: largura fixa de 276px, organizados em <code>display: flex</code> com <code>flex-wrap</code></p>
+            </div>
+
+            <div class="comp">
+                <h3>Ícones</h3>
+                <p class="txt">Font Awesome 6. O projeto usa poucos ícones e sempre como apoio a um texto ao lado: a seta do link do Style Guide e o ícone de aviso desta página.</p>
+                <div class="demo icones">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <p class="uso">Tamanho: 14px, acompanhando o texto ao lado. Cor: terracota</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2026 Sem Limites. Style Guide e Design System do Checkpoint 3.</p>
+            <p><a href="index.html">Voltar para o site</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

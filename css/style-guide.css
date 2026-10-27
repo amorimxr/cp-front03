@@ -1,0 +1,346 @@
+.abertura {
+    padding: 96px 0 64px;
+}
+
+.abertura h1 {
+    margin: 24px 0;
+    font-size: 54px;
+}
+
+.abertura p {
+    max-width: 720px;
+    color: var(--cinza);
+    font-size: 17px;
+}
+
+code {
+    padding: 2px 6px;
+    border-radius: 6px;
+    background-color: var(--areia);
+    color: var(--laranja);
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+}
+
+.sec {
+    padding: 64px 0;
+    border-top: 1px solid var(--linha);
+}
+
+.sec.cinza {
+    background-color: var(--areia);
+}
+
+.sec h2 {
+    font-size: 32px;
+}
+
+.intro {
+    max-width: 680px;
+    margin: 16px 0 40px;
+    color: var(--cinza);
+}
+
+.aviso {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    max-width: 680px;
+    margin-top: 40px;
+    padding: 16px;
+    border-left: 3px solid var(--laranja);
+    background-color: var(--areia);
+    color: var(--cinza);
+    font-size: 14px;
+}
+
+.aviso i {
+    margin-top: 4px;
+    color: var(--laranja);
+}
+
+.cores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.cor {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 150px;
+    color: var(--cinza);
+    font-size: 12px;
+}
+
+.cor strong {
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--texto);
+}
+
+.cor div {
+    height: 96px;
+    border-radius: 12px;
+}
+
+.cor .fundo {
+    border: 1px solid var(--linha);
+    background-color: var(--fundo);
+}
+
+.cor .areia {
+    background-color: var(--areia);
+}
+
+.cor .texto {
+    background-color: var(--texto);
+}
+
+.cor .cinza {
+    background-color: var(--cinza);
+}
+
+.cor .escuro {
+    background-color: var(--escuro);
+}
+
+.cor .laranja {
+    background-color: var(--laranja);
+}
+
+.cor .linha {
+    background-color: var(--linha);
+}
+
+.tipos {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.tipo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--linha);
+}
+
+.ex {
+    flex: 1 1 420px;
+}
+
+.ex.h1,
+.ex.h2,
+.ex.h3 {
+    font-family: var(--serif);
+    line-height: 1.15;
+}
+
+.ex.h1 {
+    font-size: 58px;
+}
+
+.ex.h2 {
+    font-size: 44px;
+}
+
+.ex.h3 {
+    font-size: 24px;
+}
+
+.ex.corpo {
+    font-size: 16px;
+}
+
+.ex.apoio {
+    font-size: 14px;
+    color: var(--cinza);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 260px;
+    font-size: 13px;
+    color: var(--cinza);
+}
+
+.info strong {
+    font-size: 14px;
+    color: var(--texto);
+}
+
+.espacos {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 64px;
+}
+
+.espaco {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 13px;
+    color: var(--cinza);
+}
+
+.espaco strong {
+    width: 120px;
+    font-size: 13px;
+    color: var(--texto);
+}
+
+.barra {
+    height: 18px;
+    border-radius: 4px;
+    background-color: var(--laranja);
+}
+
+.barra.e1 {
+    width: 8px;
+}
+
+.barra.e2 {
+    width: 16px;
+}
+
+.barra.e3 {
+    width: 24px;
+}
+
+.barra.e4 {
+    width: 40px;
+}
+
+.barra.e5 {
+    width: 64px;
+}
+
+.barra.e6 {
+    width: 96px;
+}
+
+.cantos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.canto {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 190px;
+    color: var(--cinza);
+    font-size: 12px;
+}
+
+.canto strong {
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--texto);
+}
+
+.caixa {
+    height: 84px;
+    border: 1px solid var(--linha);
+    background-color: var(--fundo);
+}
+
+.caixa.r1 {
+    border-radius: 12px;
+}
+
+.caixa.r2 {
+    border-radius: 20px;
+}
+
+.caixa.r3 {
+    border-radius: 28px;
+}
+
+.caixa.pill {
+    border-radius: 999px;
+}
+
+.caixa.sombra {
+    border-color: transparent;
+    border-radius: 28px;
+    box-shadow: 0 12px 30px rgba(17, 22, 31, .08);
+}
+
+.comp {
+    margin-bottom: 64px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--linha);
+}
+
+.comp h3 {
+    font-size: 24px;
+}
+
+.comp .txt,
+.comp .uso {
+    max-width: 620px;
+    color: var(--cinza);
+}
+
+.comp .txt {
+    margin: 8px 0 24px;
+    font-size: 15px;
+}
+
+.comp .uso {
+    margin-top: 16px;
+    font-size: 13px;
+}
+
+.demo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    border: 1px dashed var(--linha);
+    border-radius: 20px;
+    background-color: var(--fundo);
+}
+
+.demo.escuro {
+    border-style: solid;
+    border-color: var(--escuro);
+    background-color: var(--escuro);
+}
+
+.demo.icones {
+    gap: 24px;
+    font-size: 20px;
+    color: var(--laranja);
+}
+
+@media (max-width: 900px) {
+    .abertura h1 {
+        font-size: 38px;
+    }
+
+    .sec h2 {
+        font-size: 26px;
+    }
+
+    .ex.h1 {
+        font-size: 36px;
+    }
+
+    .ex.h2 {
+        font-size: 30px;
+    }
+
+    .info {
+        flex-basis: 100%;
+    }
+}
